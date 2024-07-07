@@ -1,0 +1,197 @@
+#wrap {
+    padding-bottom: 30px;
+    background-color:#4280ce;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding: 50px 0 19px;
+    width: 1200px;
+    box-sizing: border-box;
+}    
+
+section {
+    margin: 0 auto;
+    padding: 100px 32px 70px;
+    width: 1200px;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+div.cont h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    line-height: 30px;
+}
+
+div.cont .agreement {
+    margin-bottom: 15px;
+    padding: 30px;
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+div.cont .agreement > div {
+    height: 180px;
+    font-weight: 500;
+    color: #767676;
+    line-height: 22px;
+    /* white-space: pre-line; */
+    overflow-y: auto;
+}
+
+ul.step {
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: center;
+}
+
+ul.step li.active {
+    color: #4280ce;
+}
+
+
+ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.step li {
+    position: relative;
+    padding-top: 110px;
+    width: 100px;
+    font-weight: 500;
+    color: #767676;
+    text-align: center;
+}
+
+ul.step li.active:nth-child(1)::after {
+    background-image: url(../images/img_step01_act.png);
+}
+
+ul.step li.active::after {
+    border-color: #4280ce;
+    background-color: #4280ce;
+}
+
+
+div.cont h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    line-height: 30px;
+}
+
+table.tbi {
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
+table.tbi tbody td {
+    padding: 10px 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+table.tbi tbody th {
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #767676;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+}
+
+table.tbi input, table.tbi select, table.tbi textarea {
+    /* padding: 0 14px; */
+    width: 40%;
+    height: 44px;
+    color: #000;
+    box-sizing: border-box;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+}
+
+table.tbi input.tel {
+    width: 70px;
+}
+
+table.tbi input[type=file] {
+    padding-top: 8px;
+}
+
+table.tbi input:read-only {
+    background-color: #f7f7f7;
+}
+
+table.tbi input.addr {
+    margin-top: 8px;
+    width: 45%;
+}
+
+table.tbi button:not(.btn_toggle_pw) {
+    margin-left: 4px;
+    padding: 0 14px;
+    height: 38px;
+    color: #fff;
+    border-radius: 6px;
+    background-color: #767676;
+    border-style: none;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+
+div.btn_wrap {
+    margin-top: 50px;
+    font-size: 0;
+    text-align: center;
+}
+
+
+div.btn_wrap .btn_lg {
+    padding: 0 23px;
+    min-width: 200px;
+    height: 50px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+div.btn_wrap .btn_primary {
+    color: #fff;
+    border: 1px solid #4280ce;
+    background-color: #4280ce;
+}
+
+div.btn_wrap .btn_lg + .btn_lg {
+    margin-left: 10px;
+}
+
+div.tbHead h6 {
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+img {
+	padding: 20px;
+    height: 60px;
+    vertical-align: middle;
+}

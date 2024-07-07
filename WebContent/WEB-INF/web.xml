@@ -1,0 +1,73 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+  <display-name>kyobo</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+     <param-name>INIT_PARAM</param-name>
+     <param-value>web.xml에 저장한 초기화 매개변수</param-value>
+  </context-param>
+  
+  
+  <context-param>
+     <param-name>OrcleDriver</param-name>
+     <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  <context-param>
+     <param-name>OrcleURL</param-name>
+     <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  </context-param>
+  <context-param>
+     <param-name>OrcleId</param-name>
+     <param-value>kyobo</param-value>
+  </context-param>
+  <context-param>
+     <param-name>OrclePwd</param-name>
+     <param-value>1234</param-value>
+  </context-param>
+  
+  <context-param>
+     <param-name>POSTS_PER_PAGE</param-name>
+     <param-value>10</param-value>
+  </context-param>
+  <context-param>
+     <param-name>PAGES_PER_BLOCK</param-name>
+     <param-value>5</param-value>
+  </context-param>
+  
+  
+ 
+  <filter>
+    <filter-name>SetCharEncoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>SetCharEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <resource-ref>
+    <description>Oracle Datasource example</description>
+    <res-ref-name>jdbc/myoracle</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  
+
+</web-app>
